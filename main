@@ -1,0 +1,53 @@
+
+
+
+
+public interface InventoryManagementSystem {
+/**
+* Deduct 'amountToPick' of the given 'productId' from inventory.
+* @param productId The ID of the product to pick
+* @param amountToPick The quanty of the product to pick
+* @return TODO: to be implimented
+*/
+PickingResult pickProduct(String productId, int amountToPick);
+/**
+* Add 'amountToRestock'of the given productId to inventory.
+* @param productId The ID of the product to restock.
+* @param amountToRestock The quantity of the product to restock
+* @return TODO: to be implimented
+*/
+RestockingResult restockProduct(String productId, int amountToRestock);
+}
+
+class NYWareHouse implements InventoryManagementSystem {
+
+//Ask user for the productId
+
+int productId = 0;
+
+// Ask user for amount of product needed
+
+int amountToPick = 0;
+
+//Query the warehouse to see if that amount of inventory is available
+
+// The compiler will now require that methods
+// pickProduct, and restockProduct
+// all be implemented. Compilation will fail if those
+// methods are missing from this class.
+
+//Pick the inventory
+PickingResult pickProduct(String productId, int amountToPick){
+  //decrement inventory for productId by amountToPick
+  int Apples = length - amountToPick;
+  }
+
+//Figure how much inventory to restock
+int amountToRestock = amountToPick;
+
+//Restock the inventory
+RestockingResult restockProduct(String productId, int amountToRestock) {
+  //increment inventory for productId by amountToRestock
+  int Apples = length + amountToPick;
+  } 
+}

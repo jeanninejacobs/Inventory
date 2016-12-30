@@ -1,7 +1,10 @@
 
-
-
-
+public class warehouse (int stockApples, int stockPears, int stockOranges){
+  int Apples = stockApples;
+  int Pears = stockPears;
+  int Oranges = stockOranges;
+  }
+  
 public interface InventoryManagementSystem {
 /**
 * Deduct 'amountToPick' of the given 'productId' from inventory.
@@ -19,7 +22,7 @@ PickingResult pickProduct(String productId, int amountToPick);
 RestockingResult restockProduct(String productId, int amountToRestock);
 }
 
-class NYWareHouse implements InventoryManagementSystem {
+class warehouse implements InventoryManagementSystem {
 
 //Ask user for the productId
 
@@ -39,15 +42,15 @@ int amountToPick = 0;
 //Pick the inventory
 PickingResult pickProduct(String productId, int amountToPick){
   //decrement inventory for productId by amountToPick
-  int Apples = length - amountToPick;
+  int productId = productId - amountToPick;
   }
 
-//Figure how much inventory to restock
+//Figure how much inventory to restock by replacing what was picked
 int amountToRestock = amountToPick;
 
 //Restock the inventory
 RestockingResult restockProduct(String productId, int amountToRestock) {
   //increment inventory for productId by amountToRestock
-  int Apples = length + amountToPick;
+   productId = productId + amountToRestock;
   } 
 }
